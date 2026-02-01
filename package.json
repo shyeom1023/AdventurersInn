@@ -1,10 +1,11 @@
 {
-  "name": "${PROJECT_NAME}",
+  "name": "AdventurersInn",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "init": "node scripts/codex-init.js"
   },
   "dependencies": {},
   "devDependencies": {

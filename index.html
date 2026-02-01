@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventurers Inn - Prototype</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page">
+        <header class="topbar">
+            <div class="title">Adventurers Inn</div>
+            <div class="subtitle">Pixel grid • Harvest • Upgrade</div>
+        </header>
+
+        <main class="layout">
+            <aside class="panel">
+                <section class="panel-block">
+                    <h2>Inventory</h2>
+                    <div class="stat-row">
+                        <span>Wood</span>
+                        <span id="wood-count">0</span>
+                    </div>
+                    <div class="stat-row">
+                        <span>Stone</span>
+                        <span id="stone-count">0</span>
+                    </div>
+                </section>
+
+                <section class="panel-block">
+                    <h2>Inn</h2>
+                    <div class="stat-row">
+                        <span>Level</span>
+                        <span id="inn-level">1</span>
+                    </div>
+                    <div class="cost" id="upgrade-cost"></div>
+                    <button id="upgrade-btn" class="primary" type="button">Upgrade (F)</button>
+                </section>
+
+                <section class="panel-block">
+                    <h2>Controls</h2>
+                    <div class="hint">Move: WASD / Arrow Keys</div>
+                    <div class="hint">Harvest: E (facing tile)</div>
+                    <div class="hint">Upgrade: F (near inn)</div>
+                </section>
+
+                <section class="panel-block">
+                    <h2>Log</h2>
+                    <div id="log" class="log"></div>
+                </section>
+            </aside>
+
+            <section class="canvas-wrap">
+                <canvas id="game" width="640" height="640"></canvas>
+                <div class="legend">
+                    <span class="chip grass">Grass</span>
+                    <span class="chip tree">Tree</span>
+                    <span class="chip rock">Rock</span>
+                    <span class="chip inn">Inn</span>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
